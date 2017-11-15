@@ -1,6 +1,12 @@
 <template>
   <div>
-    <p>Index</p>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <p>Index</p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
