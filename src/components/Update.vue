@@ -1,5 +1,5 @@
 <template>
-  <button :class="classObject" @click="manageCommit">{{ buttonText }}</button>
+  <button :class="classObject">{{ buttonText }}</button>
 </template>
 
 <script>
@@ -21,32 +21,7 @@ export default {
     buttonText () {
       return this.list ? 'Remove' : 'Add'
     }
-  },
-  methods: {
-    manageCommit () {
-      this.loading = true
-      if (this.list) {
-        return this.removeFromList()
-          .then(() => {
-            this.loading = false
-          })
-      } else {
-        return this.addToList()
-          .then(() => {
-            this.loading = false
-          })
-      }
-    },
-    addToList () {
-      return this.$store.dispatch('ADD_TO_LIST', {
-        id: this.id
-      })
-    },
-    removeFromList () {
-      return this.$store.dispatch('REMOVE_FROM_LIST', {
-        id: this.id
-      })
-    }
   }
+  // TODO Add methods for add/remove
 }
 </script>
