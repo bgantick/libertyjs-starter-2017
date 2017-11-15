@@ -1,6 +1,6 @@
 <template>
   <form>
-    <rating :items="items" :value="rating" @change="update"></rating>
+    <rating :items="items" :value="rating" @change="updateRating"></rating>
   </form>
 </template>
 
@@ -43,8 +43,8 @@ export default {
     }
   },
   methods: {
-    update (val) {
-      return this.$store.dispatch('COMMIT_UPDATE_RATING', {
+    updateRating (val) {
+      return this.$store.dispatch('UPDATE_RATING', {
         id: this.id,
         rating: val
       })
