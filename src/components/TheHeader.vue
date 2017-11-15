@@ -5,10 +5,10 @@
         <span class="icon has-text-info">
           <i class="fa fa-film"></i>
         </span>
-        <router-link :to="{ name: 'index' }">My Movie App</router-link>
+        <a href="#">My Movie App</a>
       </div>
       <div class="navbar-item">
-        <router-link :to="{ name: 'list' }">List {{ listCount }}</router-link>
+        <a href="#">List</a>
       </div>
     </div>
   </nav>
