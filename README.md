@@ -1,6 +1,6 @@
 # vue-libertyjs
 
-> An introduction to Vue.js
+> An introduction to Vue.js workshop for LibertyJS 2017. For demonstration purposes only. This repo is not maintained.
 
 ## Build Setup
 
